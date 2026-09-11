@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIKA PRO - Tienda Online</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header Superior -->
+  <header>
+    <div class="header-top">
+      <a href="index.html" class="logo-container">
+        <div class="logo-img-wrapper">
+          <img src="img/logo/logo.png" alt="NIKA PRO Logo" onerror="this.src='https://via.placeholder.com/45'">
+        </div>
+        <span class="logo-title">NIKA PRO</span>
+      </a>
+
+      <div class="search-wrapper">
+        <input type="text" id="searchInput" class="search-input" placeholder="Buscar productos...">
+        <div id="searchDropdown" class="search-dropdown"></div>
+      </div>
+
+      <a href="pages/carrito.html" style="color: var(--accent-silver); text-decoration: none; font-weight: bold;">
+        🛒 Cart (<span id="cartCount">0</span>)
+      </a>
+    </div>
+
+   <nav class="nav-bar">
+  <!-- Grupo de navegación principal (Izquierda) -->
+  <div class="nav-main-links">
+    <a href="index.html">Home</a> <span class="separator">|</span>
+    <a href="pages/productos.html">Productos</a> <span class="separator">|</span>
+    <a href="pages/nosotros.html">Nosotros</a> <span class="separator">|</span>
+    <a href="pages/blogs.html">Blogs</a> <span class="separator">|</span>
+    <a href="pages/contacto.html">Contacto</a>
+  </div>
+
+  <!-- Grupo de inicio de sesión (Extremo Derecho) -->
+  <div class="user-auth-links">
+    <a href="pages/login.html">Iniciar sesión</a> <span class="separator">|</span>
+    <a href="pages/registro.html">Registrar</a>
+  </div>
+</nav>
+  </header>
+
+  <main>
+
+    <section class="hero-banner">
+      <div class="hero-text">
+        <h1>TIENDA ONLINE</h1>
+        <p>Encuentra los mejores productos y tecnología con los más altos estándares de calidad. Guías, accesorios y componentes a tu alcance.</p>
+        <a href="pages/productos.html" class="btn btn-hero">🛒 ver productos</a>
+      </div>
+      <div class="hero-placeholder-img">
+        <img src="img/banner.jpg" alt="Destacado NIKA PRO" onerror="this.src='https://images.unsplash.com/photo-1526738549149-8e07eca6c147?w=800&auto=format&fit=crop'">
+      </div>
+    </section>
+
+    <!-- Grilla de 8 Productos (2 Filas x 4 Columnas) -->
+    <section class="catalog-section">
+      <div class="grid-products" id="productGrid">
+        <!-- Renderizado dinámico desde app.js -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal para avisos -->
+  <div id="modalOverlay" class="modal-overlay">
+    <div class="modal-box">
+      <h3 id="modalTitle" class="modal-title"></h3>
+      <p id="modalMessage" class="modal-message"></p>
+      <button id="modalClose" class="btn">Cerrar</button>
+    </div>
+  </div>
+
+  <!-- Footer estilo Mockup -->
+  <footer>
+    <div class="social-links" style="margin-top: 15px;">
+      <a href="https://facebook.com" target="_blank" class="social-icon">Facebook</a>
+      <a href="https://instagram.com" target="_blank" class="social-icon">Instagram</a>
+      <a href="https://twitter.com" target="_blank" class="social-icon">X (Twitter)</a>
+    </div>
+
+    <p style="margin-top: 10px;">&copy; 2026 NIKA PRO. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

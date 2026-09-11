@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalle de Producto - Nika Pro</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-top">
+      <a href="../index.html" class="logo-container">
+        <div class="logo-img-wrapper">
+  <svg width="42" height="42" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="50" cy="50" r="48" fill="#181d23" stroke="#60a5fa" stroke-width="3"/>
+    <path d="M50 15 L58 35 L78 30 L65 45 L80 60 L60 62 L65 82 L50 70 L35 82 L40 62 L20 60 L35 45 L22 30 L42 35 Z" fill="#cbd5e1" stroke="#3b82f6" stroke-width="2"/>
+    <circle cx="50" cy="50" r="16" fill="#60a5fa" opacity="0.8"/>
+  </svg>
+</div>
+        <span class="logo-title">NIKA PRO</span>
+      </a>
+
+      <div class="search-wrapper">
+        <input type="text" id="searchInput" class="search-input" placeholder="Buscar PC, componentes, periféricos...">
+        <div id="searchResults" class="search-dropdown"></div>
+      </div>
+    </div>
+
+<nav class="nav-bar">
+
+  <div class="nav-main-links">
+    <a href="../index.html">Home</a> <span class="separator">|</span>
+    <a href="productos.html">Productos</a> <span class="separator">|</span>
+    <a href="nosotros.html">Nosotros</a> <span class="separator">|</span>
+    <a href="blogs.html">Blogs</a> <span class="separator">|</span>
+    <a href="contacto.html">Contacto</a>
+  </div>
+
+  <!-- Iniciar sesión / Registrar en el extremo derecho -->
+  <div class="user-auth-links">
+    <a href="login.html">Iniciar sesión</a> <span class="separator">|</span>
+    <a href="registro.html">Registrar</a>
+  </div>
+</nav>
+  </header>
+
+  <main>
+    <div id="productDetailContainer" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; padding: 30px; display: flex; gap: 30px; box-shadow: var(--shadow-sm);">
+      <div style="width: 48%;">
+        <img id="detailImg" src="" alt="Producto" style="width: 100%; height: 320px; object-fit: contain; background: #fff; border-radius: 6px; border: 1px solid var(--border-color); padding: 10px; margin-bottom: 15px;">
+        <div id="detailThumbnails" style="display: flex; gap: 10px;"></div>
+      </div>
+
+      <div style="width: 52%;">
+        <h2 id="detailTitle" style="color: var(--accent-silver); margin-bottom: 10px;">Cargando...</h2>
+        <p id="detailCategory" style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 10px;"></p>
+        <p id="detailPrice" style="font-size: 1.8rem; color: var(--accent-blue); font-weight: bold; margin: 15px 0;">$0</p>
+        
+        <h4 style="color: var(--accent-silver); margin-bottom: 10px;">Especificaciones Técnicas:</h4>
+        <ul id="detailSpecs" style="margin-bottom: 25px; padding-left: 20px;"></ul>
+
+        <button id="detailAddBtn" class="btn" style="padding: 12px 28px; font-size: 1rem;">🛒 Agregar al Carrito</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="social-links">
+      <a href="https://wa.me/56912345678" target="_blank" class="social-icon">💬 WhatsApp</a>
+      <a href="https://instagram.com" target="_blank" class="social-icon">📷 Instagram</a>
+      <a href="https://facebook.com" target="_blank" class="social-icon">📘 Facebook</a>
+    </div>
+    <p>&copy; 2026 Nika Pro. Freedom & Innovation. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="../main.js"></script>
+</body>
+</html>

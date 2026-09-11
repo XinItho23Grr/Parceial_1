@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIKA PRO - Blogs</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <a href="../index.html" class="logo-container">
+        <div class="logo-img-wrapper">
+          <img src="../img/logo/logo.png" alt="NIKA PRO Logo" onerror="this.style.display='none'">
+        </div>
+        <span class="logo-title">NIKA PRO</span>
+      </a>
+      <div class="search-wrapper">
+        <input type="text" id="searchInput" class="search-input" placeholder="Buscar productos...">
+        <div id="searchDropdown" class="search-dropdown"></div>
+      </div>
+    </div>
+    <nav class="nav-bar">
+  <!-- Enlaces principales a la izquierda -->
+  <div class="nav-main-links">
+    <a href="../index.html">Home</a> <span class="separator">|</span>
+    <a href="productos.html">Productos</a> <span class="separator">|</span>
+    <a href="nosotros.html">Nosotros</a> <span class="separator">|</span>
+    <a href="blogs.html">Blogs</a> <span class="separator">|</span>
+    <a href="contacto.html">Contacto</a>
+  </div>
+
+  <!-- Iniciar sesión / Registrar en el extremo derecho -->
+  <div class="user-auth-links">
+    <a href="login.html">Iniciar sesión</a> <span class="separator">|</span>
+    <a href="registro.html">Registrar</a>
+  </div>
+</nav>
+  </header>
+
+  <main>
+    <h2 style="color: var(--text-main, #ffffff); margin-bottom: 25px; text-transform: uppercase;">Novedades y Guías Tech</h2>
+
+    <article class="blog-card">
+      <div class="blog-card-content">
+        <h3>Cómo elegir la Tarjeta Gráfica ideal en 2026</h3>
+        <p>Analizamos las arquitecturas más recientes y el rendimiento necesario según la resolución de tu monitor.</p>
+        <button class="btn btn-secondary" onclick="showModal('Lectura', 'Artículo completo en desarrollo.')">Leer Artículo</button>
+      </div>
+      <img src="https://images.unsplash.com/photo-1591799264318-7e6e84575970?auto=format&fit=crop&w=600&q=80" alt="GPU Tech">
+    </article>
+  </main>
+
+  <div id="modalOverlay" class="modal-overlay">
+    <div class="modal-box">
+      <h3 id="modalTitle" class="modal-title">Aviso</h3>
+      <p id="modalMessage" class="modal-message"></p>
+      <button id="modalClose" class="btn">Aceptar</button>
+    </div>
+  </div>
+
+  <footer>
+    <div class="social-links">
+      <a href="#" class="social-icon">Instagram</a>
+      <a href="#" class="social-icon">YouTube</a>
+      <a href="#" class="social-icon">Discord</a>
+    </div>
+    <p>&copy; 2026 NIKA PRO - Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="../app.js"></script>
+</body>
+</html>

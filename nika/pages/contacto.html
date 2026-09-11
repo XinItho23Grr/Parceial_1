@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Nombre Empresa</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <!-- CABECERA SUPERIOR -->
+  <header>
+    <div class="header-top">
+      <a href="../index.html" class="logo-container">
+        <div class="logo-img-wrapper">
+          <img src="img/logo/logo.png" alt="Logo">
+        </div>
+        <span class="logo-title">Site Name</span>
+      </a>
+
+      <div class="search-wrapper">
+        <input type="text" id="searchInput" class="search-input" placeholder="Buscar productos...">
+        <div id="searchDropdown" class="search-dropdown"></div>
+      </div>
+
+      <a href="pages/carrito.html" style="color: var(--accent-silver); text-decoration: none; font-weight: bold;">
+        🛒 Cart (<span id="cartCount">0</span>)
+      </a>
+    </div>
+
+   <nav class="nav-bar">
+  <!-- Grupo de navegación principal (Izquierda) -->
+  <div class="nav-main-links">
+    <a href="index.html">Home</a> <span class="separator">|</span>
+    <a href="pages/productos.html">Productos</a> <span class="separator">|</span>
+    <a href="pages/nosotros.html">Nosotros</a> <span class="separator">|</span>
+    <a href="pages/blogs.html">Blogs</a> <span class="separator">|</span>
+    <a href="pages/contacto.html">Contacto</a>
+  </div>
+
+  <!-- Grupo de inicio de sesión (Extremo Derecho) -->
+  <div class="user-auth-links">
+    <a href="pages/login.html">Iniciar sesión</a> <span class="separator">|</span>
+    <a href="pages/registro.html">Registrar</a>
+  </div>
+</nav>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="login-wrapper">
+
+    <!-- Logo / Marca sobre el formulario -->
+    <div class="brand-hero-logo">
+      <img src="img/logo/logo.png" alt="Logo Empresa">
+    </div>
+    <h2 class="brand-hero-title">Nika Pro</h2>
+
+    <!-- Caja del Formulario de Contacto -->
+    <div class="form-box">
+      <div class="form-title-badge">
+        FORMULARIO DE CONTACTOS
+      </div>
+
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="nombre">Nombre Completo</label>
+          <input type="text" id="nombre" name="nombre" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label for="correo">Correo</label>
+          <input type="email" id="correo" name="correo" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label for="contenido">Contenido</label>
+          <textarea id="contenido" name="contenido" class="form-control" rows="4" required></textarea>
+        </div>
+
+        <div style="text-align: center; margin-top: 20px;">
+          <button type="submit" class="btn btn-login-center">ENVIAR MENSAJE</button>
+        </div>
+      </form>
+    </div>
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>&copy; 2026 Nombre Empresa. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>

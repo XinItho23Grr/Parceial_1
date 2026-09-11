@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIKA PRO - Productos</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <a href="../index.html" class="logo-container">
+        <div class="logo-img-wrapper">
+          <img src="../img/logo/logo.png" alt="NIKA PRO Logo" onerror="this.style.display='none'">
+        </div>
+        <span class="logo-title">NIKA PRO</span>
+      </a>
+      <div class="search-wrapper">
+        <input type="text" id="searchInput" class="search-input" placeholder="Buscar productos...">
+        <div id="searchDropdown" class="search-dropdown"></div>
+      </div>
+
+      <a href="pages/carrito.html" style="color: var(--accent-silver); text-decoration: none; font-weight: bold;">
+        🛒 Cart (<span id="cartCount">0</span>)
+      </a>
+    </div>
+
+   <nav class="nav-bar">
+  <!-- Grupo de navegación principal (Izquierda) -->
+  <div class="nav-main-links">
+    <a href="index.html">Home</a> <span class="separator">|</span>
+    <a href="pages/productos.html">Productos</a> <span class="separator">|</span>
+    <a href="pages/nosotros.html">Nosotros</a> <span class="separator">|</span>
+    <a href="pages/blogs.html">Blogs</a> <span class="separator">|</span>
+    <a href="pages/contacto.html">Contacto</a>
+  </div>
+
+  <!-- Grupo de inicio de sesión (Extremo Derecho) -->
+  <div class="user-auth-links">
+    <a href="pages/login.html">Iniciar sesión</a> <span class="separator">|</span>
+    <a href="pages/registro.html">Registrar</a>
+  </div>
+</nav>
+  </header>
+
+  <main>
+    <h2 style="color: var(--text-main, #ffffff); margin-bottom: 20px;">Todos los Productos</h2>
+    <div id="productGrid" class="grid-products"></div>
+  </main>
+
+  <div id="modalOverlay" class="modal-overlay">
+    <div class="modal-box">
+      <h3 id="modalTitle" class="modal-title">Aviso</h3>
+      <p id="modalMessage" class="modal-message"></p>
+      <button id="modalClose" class="btn">Aceptar</button>
+    </div>
+  </div>
+
+  <footer>
+    <div class="social-links">
+      <a href="#" class="social-icon">Instagram</a>
+      <a href="#" class="social-icon">YouTube</a>
+      <a href="#" class="social-icon">Discord</a>
+    </div>
+    <p>&copy; 2026 NIKA PRO - Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="../app.js"></script>
+</body>
+</html>
