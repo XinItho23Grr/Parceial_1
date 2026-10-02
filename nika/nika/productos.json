@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "nombre": "Audífonos Gamer RGB",
+    "precio": 85,
+    "imagenes": [
+      "img/audifonos/audifonos.jpg",
+      "img/audifonos/audifonos2.jpg",
+      "img/audifonos/audifonos3.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "nombre": "Monitor Gaming 144Hz",
+    "precio": 320,
+    "imagenes": [
+      "img/monitor/monitor.jpg",
+      "img/monitor/monitor2.jpg",
+      "img/monitor/monitor3.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "nombre": "Mouse Óptico Ergonómico",
+    "precio": 45,
+    "imagenes": [
+      "img/mouse/mouse.jpg",
+      "img/mouse/mouse2.jpg",
+      "img/mouse/mouse3.jpg"
+    ]
+  },
+  {
+    "id": 4,
+    "nombre": "PC Desktop Gamer High-End",
+    "precio": 1250,
+    "imagenes": [
+      "img/pc/pc.jpg",
+      "img/pc/pc2.jpg",
+      "img/pc/pc3.jpg"
+    ]
+  },
+  {
+    "id": 5,
+    "nombre": "Teclado Mecánico RGB",
+    "precio": 95,
+    "imagenes": [
+      "img/teclado/teclado.jpg",
+      "img/teclado/teclado2.jpg",
+      "img/teclado/teclado3.jpg"
+    ]
+  }
+]
